@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            /*
+            Medidas Absolutas
+            cm, mm, in (polegada), px (pixel), pt (ponto), pc (paica)
+            
+            Medidas Relativas
+            em (tamanho atual da fonte), ex (altura X da fonte), rem (relativo ao root), vw (relativo ao view port - tamanho da tela),
+            vh (altura do view port), %
+
+            Recomendação: usar px ou em - 16px geralmente = 1em
+            */
+            font-size: 16px; /*tamanho normal da fonte*/
+        }
+
+        h1{
+            /*shorthand font
+            - font-style -> font weight -> font-size -> font-family
+            
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            */
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, a nihil quia nam nobis autem, beatae praesentium itaque et fuga doloremque officiis commodi exercitationem voluptas mollitia earum quam expedita odio. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit eos eius aperiam repellat fuga necessitatibus voluptas dolor non odio vitae consectetur, recusandae dignissimos, velit possimus autem mollitia itaque sed temporibus? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi eum reprehenderit unde libero facere cum voluptate eos inventore, praesentium dolor aperiam eius non a, totam deserunt. Obcaecati blanditiis perferendis officia.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae repellat error similique suscipit libero provident accusamus, quibusdam architecto velit esse officia facilis, laborum quam. Nostrum nesciunt fugiat doloribus soluta id!</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum commodi, non voluptate cupiditate aliquam temporibus tenetur nisi itaque dolore voluptates nulla laudantium omnis doloremque laboriosam, aspernatur quo ex quasi error!</p>
+
+</body>
+</html>
