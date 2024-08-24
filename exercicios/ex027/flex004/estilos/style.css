@@ -24,17 +24,6 @@ header {
     border-top-right-radius: 15px;
 }
 
-main {
-    background-color: white;
-    padding: 10px;
-}       
-
-h1, h2 {
-    text-align: center;
-    padding: 5px;
-    margin: 5px;
-}
-
 header > p > strong {
     color: coral;
 }
@@ -45,6 +34,17 @@ header > p > a {
     padding: 10px;
     margin: 20px;
     cursor: pointer;
+}
+
+main {
+    background-color: white;
+    padding: 10px;
+}       
+
+h1, h2 {
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
 }
 
 img {
