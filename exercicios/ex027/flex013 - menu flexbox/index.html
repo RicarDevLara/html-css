@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Meu Site</title>
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Meu Site</h1>
+        
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+            <nav id="itens">
+                <a href="#">Opção 1</a>
+                <a href="#">Opção 2</a>
+                <a href="#">Opção 3</a>
+                <a href="#">Opção 4</a>
+                <a href="#">Opção 5</a>
+                <a href="#">Opção 6</a>
+            </nav>
+        
+    </header>
+    <main>
+        <h2>Teste de Flexbox</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, esse et reiciendis excepturi quo tempora, ducimus officia dolor consequatur, nihil omnis velit assumenda reprehenderit expedita fugit? Non, quis dolorum? Delectus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque unde cupiditate exercitationem, aliquam voluptatibus aut voluptatum quaerat earum culpa officia, laboriosam dicta ipsam nisi distinctio tenetur nemo odit ducimus molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illo corporis quis eos quo minus suscipit totam omnis deserunt dolore! Temporibus vel doloremque nulla quae facilis ut modi praesentium esse.</p><br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati enim eos atque recusandae aspernatur! Ad autem labore debitis incidunt odio voluptatem sapiente atque ipsa, ipsam dolorem sequi totam nam exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet possimus ut est fuga eveniet dolor ab quaerat veniam nihil, earum sunt officiis voluptatibus neque voluptas rem maiores a fugit voluptate.</p><br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati enim eos atque recusandae aspernatur! Ad autem labore debitis incidunt odio voluptatem sapiente atque ipsa, ipsam dolorem sequi totam nam exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet possimus ut est fuga eveniet dolor ab quaerat veniam nihil, earum sunt officiis voluptatibus neque voluptas rem maiores a fugit voluptate. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam illum porro blanditiis fugiat minima libero ducimus illo, optio quaerat aut voluptatibus voluptate veritatis eum, voluptatem cum hic dolore, facere magnam.</p>
+    </main>
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+           if (itens.style.display == 'block'){
+               itens.style.display = 'none'            
+           } else {
+               itens.style.display = 'block'
+           }
+        }
+    </script>
+</body>
+</html>

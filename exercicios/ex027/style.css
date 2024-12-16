@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root {
+    --fonte1: "DM Serif Text", serif;
+    --fonte2: "Lora", serif;
+
+    --cor1: #96E05F; /* verde */
+    --cor2: #DE8566; /* alaranjado */
+    --cor3: #6678DE; /* azul meio roxo */
+    --cor4: #7C7F8F; /* cinza */
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightsalmon;
+}
+
+main {
+    background-color: white;
+    margin: 10px;
+    height: 70vh;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+header {
+    background-color: var(--cor1);
+    margin: 10px;
+    padding: 10px 5px;
+    display: block;
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+header > h1 {
+    font-family: var(--fonte2);
+    font-style: italic;
+    font-size: 80px;
+    color: var(--cor3);
+    text-shadow: 2px 2px 2px black;
+}
+
+footer {
+    background-color: var(--cor4);
+    margin: 10px;
+    padding: 5px;
+    display: block;
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+footer > a {
+    font-style: italic;
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    
+    <style>
+        /* 
+            justify-content (deve ser usado no container) - sempre de acordo com o main-axis:  
+            
+             - flex-start - vai colar o conteúdo no main-start;
+             - flex-end - vai colar o conteúdo no main-end;
+             - flex-center - todos os itens juntos no centro do container, e os espaços serão distribuídos igualmente no main-start e main-end;
+             - space-between - primeiro item vai estar no main-start e o último no main-end. Os outros vão ser distribuídos por igual;
+             - space-evenly - colocar os elementos de forma que os espaçamentos iguais, inclusive antes do primeiro e depois do último;
+             - space-around - divide o container pelo número de elementos e os centraliza em cada uma das divisórias;
+
+            align-items (também deve ser usado no container) - sempre de acordo com o cross-axis::after
+
+             - stretch (padrão) - "estica" os itens no sentido do cross-axis;
+             - flex-start - vai colar o conteúdo no cross-start;
+             - flex-end - vai colar o conteúdo no cross-end;
+             - center - todos os itens juntos no centro do container, e os espaços serão distribuídos igualmente no cross-start e cross-end;
+        */
+        
+        div.item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        div.conteiner1 {
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+        }
+
+        div.conteiner2 {
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-end;
+        }
+
+        div.conteiner3 {
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+        
+        div.conteiner4 {
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+        }
+        
+        div.conteiner5 {
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+        }
+        
+        div.conteiner6 {
+            background-color: lightsalmon;
+            height: 70px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            align-items: stretch;
+        }
+
+        div.conteiner7 {
+            background-color: lightsalmon;
+            height: 70px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+        
+        div.conteiner8 {
+            background-color: lightsalmon;
+            height: 70px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            align-items: flex-end;
+        }
+        
+        div.conteiner9 {
+            background-color: lightsalmon;
+            height: 70px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p><a href="justify_content.html">Gráfico de justify-content</a></p>
+        <br>
+        <p><a href="align-itens.html">Gráfico de align-items</a></p>
+        <br>
+        <u><p>Para testar, altere o tamanho da tela!</p></u>
+    </header>
+
+    <main>
+        <u><h1>flex-flow: row nowrap</h1></u>
+        <h2>justify-content: <b>flex-start</b></h2>
+        <div class="conteiner1">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">F</div>
+            <div class="item">G</div>
+        </div>
+        <br>
+        <h2>justify-content: <b>flex-end</b></h2>
+        <div class="conteiner2">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">F</div>
+            <div class="item">G</div>
+        </div>
+        <br>
+        <h2>justify-content: <b>space-between</b></h2>
+        <div class="conteiner3">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">F</div>
+            <div class="item">G</div>
+        </div>
+        <br>
+        <h2>justify-content: <b>space-evenly</b></h2>
+        <div class="conteiner4">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">F</div>
+            <div class="item">G</div>
+        </div>
+        <br>
+        <h2>justify-content: <b>space-around</b></h2>
+        <div class="conteiner5">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">F</div>
+            <div class="item">G</div>
+        </div>
+        <br>
+        <h2>align-items: <b>stretch</b></h2>
+        <div class="conteiner6">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">F</div>
+            <div class="item">G</div>
+        </div>
+        <br>
+        <h2>align-items: <b>flex-start</b></h2>
+        <div class="conteiner7">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">F</div>
+            <div class="item">G</div>
+        </div>
+        <br>
+        <h2>align-items: <b>flex-end</b></h2>
+        <div class="conteiner8">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">F</div>
+            <div class="item">G</div>
+        </div>
+        <br>
+        <h2>align-items: <b>center</b></h2>
+        <div class="conteiner9">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">F</div>
+            <div class="item">G</div>
+        </div>
+    </main>
+</body>
+</html>
