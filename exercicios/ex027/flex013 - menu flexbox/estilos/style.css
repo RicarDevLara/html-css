@@ -46,6 +46,7 @@ header > h1 {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-shadow: 1px 1px 1px black;
     padding: 5px;
+    flex: 0 0 200px;
 }
 
 i#burguer {
@@ -60,15 +61,20 @@ i#burguer {
 
 header > nav {
     padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
 }
 
 header > nav > a {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-decoration: none;
+    text-align: center;
     background-color: black;
     color: white;
     border-radius: 5px;
     padding: 10px;
+    margin: 5px;
 }
 
 header > nav > a:hover {
